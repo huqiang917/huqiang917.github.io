@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery.js"></script>
+    <script src="../jquery.fullpage.js"></script>
+    <!--<link rel="stylesheet" href="../jquery.fullpage.css">-->
+    <!--<link rel="stylesheet" href="../animate.css">-->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div id="fullpageId">
+    <div class="section first">
+        <div class="logo"></div>
+        <div class="text">
+            <img src="images/text_1.png" alt="">
+            <img src="images/text_2.png" alt="">
+            <img src="images/text_3.png" alt="">
+            <img src="images/text_4.png" alt="">
+            <img src="images/text_5.png" alt="">
+            <img src="images/text_6.png" alt="">
+            <img src="images/text_7.png" alt="">
+            <img src="images/text_8.png" alt="">
+        </div>
+        <div class="info"></div>
+    </div>
+    <div class="section second">
+        <div class="shield">
+            <img src="images/shield_1.png" alt="">
+            <img src="images/shield_2.png" alt="">
+            <img src="images/shield_3.png" alt="">
+            <img src="images/shield_4.png" alt="">
+            <img src="images/shield_5.png" alt="">
+            <img src="images/shield_6.png" alt="">
+            <img src="images/shield_7.png" alt="">
+            <img src="images/shield_8.png" alt="">
+            <img src="images/shield_9.png" alt="">
+        </div>
+        <div class="info"></div>
+    </div>
+    <div class="section three">
+        <div class="info"></div>
+        <div class="circle"></div>
+        <div class="rocket"></div>
+    </div>
+    <div class="section four">
+        <div class="search">
+            <div class="key"></div>
+            <div class="input"></div>
+            <div class="wrap">
+                <div class="result"></div>
+            </div>
+        </div>
+        <div class="info"></div>
+    </div>
+    <div class="section five">
+        <div class="info"></div>
+        <div class="broswer">
+            <div class="topLine"></div>
+            <div class="leftLine"></div>
+            <div class="rightLine"></div>
+            <div class="bottomLine"></div>
+            <div class="topBar"></div>
+            <div class="box">
+                <span></span>
+            </div>
+            <div class="line"></div>
+            <div class="extra"></div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(function () {
+        $('#fullpageId').fullpage({
+            //指定每屏颜色，按顺序
+            sectionsColor:['#0da5d6','#2ab561','#de8910','#16ba9d','#0da5d6'],
+            afterLoad:function(anchorLink,index){
+                $('.section').removeClass('current');
+        //动画延迟加载
+                setTimeout(function () {
+                    $('.section').eq(index-1).addClass('current');
+                },100);
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

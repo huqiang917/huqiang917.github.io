@@ -1,0 +1,334 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/*第一屏*/
+.first{
+    overflow: hidden;
+}
+.first .fp-tableCell{
+    margin-top: 80px;
+}
+.first .logo{
+    background:url("images/logo.png") no-repeat;
+    width: 251px;
+    height: 186px;
+    margin:0 auto;
+}
+.first .text{
+    text-align: center;
+    margin :85px 0 45px;
+}
+.first .text img{
+    margin:0 25px;
+    opacity: 0;
+}
+.first .info{
+    background: url("images/info_1.png") no-repeat;
+    width: 772px;
+    height: 49px;
+    margin:0 auto;
+}
+.first.current .text img{
+    margin :0 10px;
+    opacity:1;
+    transition: all ease 0.7s;
+}
+/*第二屏*/
+.second{
+    overflow: hidden;
+    padding:0 100px;
+}
+.second>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second .shield{
+    width: 428px;
+    height: 498px;
+}
+.second .shield img{
+    display: block;
+    float: left;
+}
+.second .shield img:nth-child(1){
+    transform:translate(35px,78px) rotate(45deg);
+}
+.second .shield img:nth-child(2){
+    transform:translate(135px,282px) rotate(15deg);
+}
+.second .shield img:nth-child(3){
+    transform:translate(187px,62px) rotate(25deg);
+}
+.second .shield img:nth-child(4){
+    transform:translate(10px,162px) rotate(30deg);
+}
+.second .shield img:nth-child(5){
+    transform:translate(-150px,-270px) rotate(30deg);
+}
+.second .shield img:nth-child(6){
+    transform:translate(-100px,-100px) rotate(-30deg);
+}
+.second .shield img:nth-child(7){
+    transform:translate(180px,305px) rotate(-25deg);
+}
+.second .shield img:nth-child(8){
+    transform:translate(320px,82px) rotate(-15deg);
+}
+.second .shield img:nth-child(9){
+    transform:translate(200px,230px) rotate(-45deg);
+}
+.second .info{
+    background: url('images/info_2.png') no-repeat;
+    width: 635px;
+    height: 309px;
+}
+.second.current .shield img{
+    transform:translate(0,0) rotate(0deg);
+    transition: all ease 0.7s;
+}
+/*第三屏*/
+.three{
+    overflow: hidden;
+    padding:0 100px;
+    position: relative;
+}
+.three>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.three .info{
+    background: url("images/info_3.png") no-repeat;
+    width: 631px;
+    height: 278px;
+
+}
+.three .circle{
+    background: url('images/circle.png') no-repeat;
+    width: 453px;
+    height: 449px;
+    animation: rot 4s infinite linear;
+}
+@keyframes rot {
+    0%{
+        transform :rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.three .rocket{
+    background: url("images/rocket.png") no-repeat;
+    width: 203px;
+    height: 204px;
+    position: absolute;
+    top:450px;
+    left:1100px;
+    transform: translate(-500px,500px);
+}
+.three.current .rocket{
+    transform: translate(0,0);
+    transition: all .7s ease;
+}
+/*第四屏*/
+.four{
+    padding: 0 100px;
+    overflow: hidden;
+}
+.four>div{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    overflow: hidden;
+}
+.four .search{
+    position: relative;
+    width: 529px;
+    height: 320px;
+    transform: translateX(-102%);
+}
+.four .search .key{
+    background: url('images/key.png') no-repeat;
+    width: 0;
+    height: 22px;
+    position: absolute;
+    top:23px;
+    left:20px;
+
+}
+.four .search .input{
+    background: url('images/search.png') no-repeat;
+    width: 529px;
+    height: 66px;
+    position: absolute;
+}
+.four .search .wrap{
+    width: 529px;
+    height: 372px;
+    position: absolute;
+    overflow: hidden;
+    top:53px;
+}
+.four .search .result{
+    background: url('images/result.png') no-repeat;
+    width: 529px;
+    height: 372px;
+    position: absolute;
+    transform: translateY(-375px);
+
+}
+.four .info{
+    background: url('images/info_4.png') no-repeat;
+    width: 612px;
+    height: 299px;
+}
+.four.current .search .key{
+    animation:key 1.5s steps(5) 0.7s forwards;
+}
+
+@keyframes key {
+    0%{
+        width:0;
+    }
+    100%{
+        width: 99px;
+    }
+}
+.four.current .search{
+    transition: all .7s;
+    transform: translateX(0);
+}
+.four.current .search .result{
+    transform: translateY(0);
+    transition: all .7s ease 2.5s;
+}
+/*第五屏*/
+.five{
+    overflow: hidden;
+}
+.five>div{
+    display: flex;
+    flex-direction: column;
+}
+.five .info{
+    background: url('images/info_5.png') no-repeat center center;
+    margin:30px 0;
+    height: 134px;
+}
+.five .broswer{
+    position: relative;
+    width: 1004px;
+    margin:0 auto;
+    flex:1;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.five .broswer .topLine{
+    width: 1004px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(50%);
+    opacity: 0;
+}
+.five .broswer .leftLine{
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.five .broswer .rightLine{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right:0;
+    top:0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(50%);
+    opacity: 0;
+}
+.five .broswer .bottomLine{
+    position: absolute;
+    width: 1004px;
+    height: 1px;
+    left:0;
+    bottom:0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.five .broswer .topBar{
+    background: url('images/toolbar.png') no-repeat;
+    width: 1004px;
+    height: 79px;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+}
+.five .broswer .extra{
+    background: url('images/extra.png') no-repeat;
+    width: 394px;
+    height: 29px;
+    position: absolute;
+    right:0;
+    bottom:0;
+    opacity: 0;
+}
+.five .broswer .line{
+    position: absolute;
+    width: 1004px;
+    height: 1px;
+    bottom:29px;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.five .broswer .box{
+    width: 0;
+    height: 27px;
+    overflow: hidden;
+    position: absolute;
+    top:30px;
+    left:70px;
+}
+.five .broswer .box span{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    /*width: 920px;*/
+    height: 100%;
+    border:1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+}
+.five.current .broswer .topLine{
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 0.7s linear;
+}
+.five.current .broswer .leftLine{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.7s linear;
+}
+.five.current .broswer .rightLine{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.7s linear;
+}
+.five.current .broswer .box{
+    width: 920px;
+    transition: all 1s  1s;
+}
+.five.current .broswer .topBar{
+    opacity: 1;
+    transition: all 1s  1.5s;
+}
+.five.current .broswer .extra{
+    opacity: 1;
+    transition: all 1s  1.5s;
+}
+
+
+
+
