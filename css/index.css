@@ -1,4 +1,4 @@
-*{
+﻿*{
     margin:0;
     padding:0;
 }
@@ -11,7 +11,7 @@
     margin-top: 80px;
 }
 .first .logo{
-    background:url("images/logo.png") no-repeat;
+    background:url("../images/logo.png") no-repeat;
     width: 251px;
     height: 186px;
     margin:0 auto;
@@ -25,7 +25,7 @@
     opacity: 0;
 }
 .first .info{
-    background: url("images/info_1.png") no-repeat;
+    background: url("../images/info_1.png") no-repeat;
     width: 772px;
     height: 49px;
     margin:0 auto;
@@ -81,7 +81,7 @@
     transform:translate(200px,230px) rotate(-45deg);
 }
 .second .info{
-    background: url('images/info_2.png') no-repeat;
+    background: url('../images/info_2.png') no-repeat;
     width: 635px;
     height: 309px;
 }
@@ -102,13 +102,13 @@
 
 }
 .three .info{
-    background: url("images/info_3.png") no-repeat;
+    background: url("../images/info_3.png") no-repeat;
     width: 631px;
     height: 278px;
 
 }
 .three .circle{
-    background: url('images/circle.png') no-repeat;
+    background: url('../images/circle.png') no-repeat;
     width: 453px;
     height: 449px;
     animation: rot 4s infinite linear;
@@ -122,7 +122,7 @@
     }
 }
 .three .rocket{
-    background: url("images/rocket.png") no-repeat;
+    background: url("../images/rocket.png") no-repeat;
     width: 203px;
     height: 204px;
     position: absolute;
@@ -152,7 +152,7 @@
     transform: translateX(-102%);
 }
 .four .search .key{
-    background: url('images/key.png') no-repeat;
+    background: url('../images/key.png') no-repeat;
     width: 0;
     height: 22px;
     position: absolute;
@@ -161,7 +161,7 @@
 
 }
 .four .search .input{
-    background: url('images/search.png') no-repeat;
+    background: url('../images/search.png') no-repeat;
     width: 529px;
     height: 66px;
     position: absolute;
@@ -174,7 +174,7 @@
     top:53px;
 }
 .four .search .result{
-    background: url('images/result.png') no-repeat;
+    background: url('../images/result.png') no-repeat;
     width: 529px;
     height: 372px;
     position: absolute;
@@ -182,7 +182,7 @@
 
 }
 .four .info{
-    background: url('images/info_4.png') no-repeat;
+    background: url('../images/info_4.png') no-repeat;
     width: 612px;
     height: 299px;
 }
@@ -215,7 +215,7 @@
     flex-direction: column;
 }
 .five .info{
-    background: url('images/info_5.png') no-repeat center center;
+    background: url('../images/info_5.png') no-repeat center center;
     margin:30px 0;
     height: 134px;
 }
@@ -259,7 +259,7 @@
     background-color: rgba(255, 255, 255, 0.5);
 }
 .five .broswer .topBar{
-    background: url('images/toolbar.png') no-repeat;
+    background: url('../images/toolbar.png') no-repeat;
     width: 1004px;
     height: 79px;
     position: absolute;
@@ -268,7 +268,7 @@
     opacity: 0;
 }
 .five .broswer .extra{
-    background: url('images/extra.png') no-repeat;
+    background: url('../images/extra.png') no-repeat;
     width: 394px;
     height: 29px;
     position: absolute;
